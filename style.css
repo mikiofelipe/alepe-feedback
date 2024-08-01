@@ -1,0 +1,107 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Open Sans", sans-serif;
+}
+  
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    /* Alinha centralmente todos os itens dentro do container */
+}
+  
+.logo {
+    max-width: 1000px; /* Ajuste o tamanho máximo da logo conforme necessário */
+    margin-bottom: 1%; /* Espaço abaixo da logo */
+} 
+
+h1 {
+    color: #22224d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Volta o alinhamento do texto para a esquerda */
+}
+  
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+  
+input[type="text"],
+select,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    resize: none;
+}
+  
+button {
+    padding: 10px 20px;
+    background-color: #22224d;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    border: 0;
+}
+  
+button:hover {
+    transform: scale(1.02);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+footer {
+    background-color: #22224d;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+}
+
+footer .textinho{
+    margin-left: 140px;
+}
+
+.social-icons{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+}
