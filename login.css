@@ -1,0 +1,100 @@
+:root {
+    --branco-principal: #fff;
+    --preto-principal: #000;
+    --azul-alepe: #22224d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    background: var(--branco-principal);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--preto-principal);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.input-container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid var(--preto-principal);
+    border-radius: 10px;
+    font-size: 16px;
+    color: var(--preto-principal);
+    padding: 20px 45px 20px 20px;
+}
+
+.input-container input::placeholder {
+    color: var(--preto-principal);
+}
+
+.input-container img {
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    margin-top: 5px;
+}
+
+.input-container a { 
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--preto-principal);
+    text-decoration: none;
+}
+
+.input-container a:hover{
+    text-decoration: underline;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--azul-alepe);
+    border: none;
+    border-radius: 10px;
+    color: var(--branco-principal);
+    font-weight: 700;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    transform: scale(1.03);   
+
+}
+
+form img {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
+}
